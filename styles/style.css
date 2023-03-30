@@ -1,0 +1,173 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url(../assets/fonts/Roboto/Roboto-Bold.ttf);
+}
+
+:root {
+    --fontfamily-roboto: Roboto;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    background: linear-gradient(45deg, #AC5FCF, #3625AF);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Header */
+
+header {
+    width: 100%;
+    height: 5.625rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 9.375rem;
+}
+
+header .header-titulo {
+    display: flex;
+    gap: 0.75rem;
+}
+
+header .header-titulo h1 {
+    font-family: var(--fontfamily-roboto);
+    font-weight: 700;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 3px rgb(255, 255, 255);
+}
+
+header .header-titulo input {
+    width: 25rem;
+}
+
+::placeholder {
+    padding-left: 0.625rem;
+}
+
+header .header-menu {
+    display: flex;
+    gap: 3.125rem;
+
+}
+
+header .header-menu a {
+    font-family: var(--fontfamily-roboto);
+    font-size: 0.875rem;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+header .header-icons-menu {
+    display: flex;
+    gap: 25px;
+}
+
+header .header-icons-menu img {
+    width: 1.563rem;
+}
+
+main {
+    width: 100%;
+    height: 1000px;
+}
+
+main .banner-principal {
+    width: 100%;
+    height: 760px;
+
+    position: relative;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+main .banner-principal .texto-banner-principal {
+    width: 436px;
+    position: absolute;
+    left: 900px;
+    top: 160px;
+    color: #FFFFFF;
+    font-family: var(--fontfamily-roboto);
+    font-weight: 700;
+}
+
+main .banner-principal .img-banner-principal {
+    margin-right: 300px;
+    margin-top: 100px;
+}
+
+main .banner-principal .img-banner-principal img {
+    width: 900px;
+}
+
+main .banner-principal .texto-banner-principal p {
+    text-transform: uppercase;
+    padding-bottom: 20px;
+}
+
+main .banner-principal .texto-banner-principal h1 {
+    font-size: 80px;
+}
+
+main .banner-principal .texto-banner-principal button {
+    width: 175px;
+    height: 50px;
+    border-radius: 30px;
+    background-color: #FFC300;
+    color: #FFFFFF;
+    font-family: var(--fontfamily-roboto);
+    font-size: 16px;
+    border-width: 0;
+}
+
+main .banner-principal .texto-banner-principal button:hover {
+    cursor: pointer;
+    box-shadow: 5px 5px 3px #000000;
+    transition: 0.5s;
+}
+
+main .banner-compras {
+    width: 100%;
+    height: 240px;
+    background-color: #fdf2ffda;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 50px;
+}
+
+main .banner-compras img {
+    width: 16%;
+    padding-bottom: 40px;
+}
+
+main .banner-compras article {
+    width: 263px;
+
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+main .banner-compras article h3 {
+    font-family: var(--fontfamily-roboto);
+    font-weight: 700;
+    text-shadow: 1px 1px 1px #000000;
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+main .banner-telas {
+    width: 100%;
+    height: 770px;
+}
